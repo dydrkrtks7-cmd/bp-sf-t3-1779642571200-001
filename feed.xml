@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title><![CDATA[ SF T3 블로그]]></title>
-  <link>https://dydrkrtks7-cmd.github.io</link>
-  <description><![CDATA[ SF-T3 자동생성 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-  <language>ko-KR</language>
-  <pubDate>Thu, 28 May 2026 19:48:03 GMT</pubDate>
-  <lastBuildDate>Thu, 28 May 2026 19:48:03 GMT</lastBuildDate>
-  <atom:link href="https://dydrkrtks7-cmd.github.io/feed.xml" rel="self" type="application/rss+xml" />
+  <title><![CDATA[SF-T3 자동생성]]></title>
+  <link>https://dydrkrtks7-cmd.github.io/bp-sf-t3-1779642571200-001</link>
+  <description><![CDATA[SF-T3 자동생성 - SF T3 블로그 관련 최신 소식 및 가이드]]></description>
+  <language>ko</language>
+  <pubDate>Wed, 10 Jun 2026 02:56:46 GMT</pubDate>
+  <lastBuildDate>Wed, 10 Jun 2026 02:56:46 GMT</lastBuildDate>
+  <atom:link href="https://dydrkrtks7-cmd.github.io/bp-sf-t3-1779642571200-001/feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
-      <title><![CDATA[ SF T3 블로그 - 공식 홈페이지 오픈 안내]]></title>
-      <link>https://dydrkrtks7-cmd.github.io/</link>
-      <guid isPermaLink="true">https://dydrkrtks7-cmd.github.io/</guid>
-      <description><![CDATA[ SF-T3 자동생성 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-      <pubDate>Thu, 28 May 2026 19:48:03 GMT</pubDate>
+      <title><![CDATA[구체적 니치 콘텐츠 작성]]></title>
+      <link>https://dydrkrtks7-cmd.github.io/bp-sf-t3-1779642571200-001/posts/interview-002-1rce0gr.html</link>
+      <guid isPermaLink="true">https://dydrkrtks7-cmd.github.io/bp-sf-t3-1779642571200-001/posts/interview-002-1rce0gr.html</guid>
+      <description><![CDATA[아, 진짜... 아식스 젤 카야노 14 OG 아이보리 컬러웨이의 2023년 리스탁에서 달라진 인솔 로고 프린트를 이야기해볼게. ## 관점: 중고 리셀러의 시점 ### 검색 의도 대응#### 비교 기준 1: 진품 감별 포인트 하나만 틀려도 손해율은?#### 비교 기준 2]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[SF T3 블로그에 관한 흔한 오해, 직접 확인해보니 달랐던 점]]></title>
+      <link>https://dydrkrtks7-cmd.github.io/bp-sf-t3-1779642571200-001/posts/myth-001-1rce0gr.html</link>
+      <guid isPermaLink="true">https://dydrkrtks7-cmd.github.io/bp-sf-t3-1779642571200-001/posts/myth-001-1rce0gr.html</guid>
+      <description><![CDATA[### 제목: 창작한 제목SF T3 블로그에서의 엘든링 데이터 마이닝 미사용 보스 3종 패턴 분석 #### 소제목- 미사용 보스의 실제 패턴과 컷된 이유- 특정 패치로 막힌 스킵 글리치의 프레임 단위 재현 조건- 기억이 불확실한 수치와 사례 제외 ## 금지 지식 절대 ]]></description>
+      <pubDate>Wed, 10 Jun 2026 00:00:00 GMT</pubDate>
     </item>
 </channel>
 </rss>
