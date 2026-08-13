@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (1/3) · sf-t3-1779642571200-001</title>
+  <meta name="description" content="sf-t3-1779642571200-001에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://dangsan-body-care.mens-esthe.space/posts.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ /* 
+ * DESIGN SYSTEM: Editorial Apple (Kr-Noir-Gold)
+ * DIRECTIVE: DO NOT MODIFY CSS VARIABLES OR STRUCTURE.
+ */
+ :root {
+ --bg-color: #000000;
+ --text-primary: #F5F5F7;
+ --text-secondary: #86868B;
+ --accent-gold: #D4AF37;
+ --accent-gold-hover: #FFD700;
+ --border-color: #333333;
+ --card-bg: #0A0A0A;
+ --font-main: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+ --font-serif: "Times New Roman", Times, serif;
+ --transition-speed: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+ }
+
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ body {
+ background-color: var(--bg-color);
+ color: var(--text-primary);
+ font-family: var(--font-main);
+ line-height: 1.6;
+ overflow-x: hidden;
+ -webkit-font-smoothing: antialiased;
+ }
+
+ a {
+ text-decoration: none;
+ color: inherit;
+ transition: color var(--transition-speed);
+ }
+
+ ul {
+ list-style: none;
+ }
+
+ /* Navigation */
+ .site-nav {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ padding: 20px 40px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ background: rgba(0, 0, 0, 0.8);
+ backdrop-filter: blur(20px);
+ z-index: 1000;
+ border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+ }
+
+ .nav-logo {
+ font-size: 1.5rem;
+ font-weight: 700;
+ letter-spacing: -0.05em;
+ color: var(--text-primary);
+ }
+
+ .nav-logo span {
+ color: var(--accent-gold);
+ }
+
+ .nav-links {
+ display: flex;
+ gap: 30px;
+ }
+
+ .nav-links a {
+ font-size: 0.9rem;
+ font-weight: 500;
+ color: var(--text-secondary);
+ text-transform: uppercase;
+ letter-spacing: 0.05em;
+ }
+
+ .nav-links a:hover, .nav-links a.active {
+ color: var(--accent-gold);
+ }
+
+ /* Hero Section */
+ .hero-section {
+ padding: 180px 20px 100px;
+ text-align: center;
+ max-width: 1200px;
+ margin: 0 auto;
+ }
+
+ .hero-title {
+ font-size: clamp(3rem, 8vw, 6rem);
+ font-weight: 800;
+ line-height: 1.1;
+ letter-spacing: -0.03em;
+ margin-bottom: 20px;
+ background: linear-gradient(135deg, #fff 0%, #888 100%);
+ -webkit-background-clip: text;
+ -webkit-text-fill-color: transparent;
+ }
+
+ .hero-subtitle {
+ font-size: clamp(1.2rem, 3vw, 1.8rem);
+ color: var(--text-secondary);
+ max-width: 600px;
+ margin: 0 auto;
+ font-weight: 400;
+ }
+
+ .hero-accent {
+ color: var(--accent-gold);
+ font-style: italic;
+ font-family: var(--font-serif);
+ }
+
+ /* Content Grid */
+ .content-grid {
+ display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+ gap: 40px;
+ max-width: 1400px;
+ margin: 0 auto;
+ padding: 40px 20px 100px;
+ }
+
+ .info-card {
+ background: var(--card-bg);
+ border: 1px solid var(--border-color);
+ padding: 40px;
+ border-radius: 20px;
+ transition: transform var(--transition-speed), border-color var(--transition-speed);
+ position: relative;
+ overflow: hidden;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ min-height: 400px;
+ }
+
+ .info-card::before {
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 2px;
+ background: var(--accent-gold);
+ transform: scaleX(0);
+ transform-origin: left;
+ transition: transform var(--transition-speed);
+ }
+
+ .info-card:hover {
+ transform: translateY(-10px);
+ border-color: var(--accent-gold);
+ }
+
+ .info-card:hover::before {
+ transform: scaleX(1);
+ }
+
+ .card-tag {
+ font-size: 0.8rem;
+ color: var(--accent-gold);
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+ margin-bottom: 20px;
+ font-weight: 600;
+ }
+
+ .card-title {
+ font-size: 2rem;
+ font-weight: 700;
+ margin-bottom: 15px;
+ line-height: 1.2;
+ }
+
+ .card-desc {
+ color: var(--text-secondary);
+ font-size: 1.1rem;
+ margin-bottom: 30px;
+ flex-grow: 1;
+ }
+
+ .card-link {
+ font-size: 1rem;
+ font-weight: 600;
+ color: var(--text-primary);
+ display: inline-flex;
+ align-items: center;
+ gap: 10px;
+ }
+
+ .card-link::after {
+ content: '→';
+ transition: transform 0.3s ease;
+ }
+
+ .card-link:hover::after {
+ transform: translateX(5px);
+ color: var(--accent-gold);
+ }
+
+ /* Data Stats Section */
+ .stats-section {
+ background: #050505;
+ padding: 100px 20px;
+ border-top: 1px solid var(--border-color);
+ border-bottom: 1px solid var(--border-color);
+ }
+
+ .stats-container {
+ max-width: 1200px;
+ margin: 0 auto;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 20px;
+ text-align: center;
+ }
+
+ .stat-item h3 {
+ font-size: 4rem;
+ color: var(--accent-gold);
+ font-weight: 800;
+ margin-bottom: 10px;
+ font-family: var(--font-serif);
+ }
+
+ .stat-item p {
+ color: var(--text-secondary);
+ font-size: 1.2rem;
+ text-transform: uppercase;
+ letter-spacing: 0.1em;
+ }
+
+ /* FAQ Section */
+ .faq-section {
+ max-width: 800px;
+ margin: 100px auto;
+ padding: 0 20px;
+ }
+
+ .section-header {
+ font-size: 2.5rem;
+ font-weight: 700;
+ margin-bottom: 60px;
+ text-align: center;
+ }
+
+ .faq-item {
+ border-bottom: 1px solid var(--border-color);
+ padding: 30px 0;
+ }
+
+ .faq-question {
+ font-size: 1.5rem;
+ font-weight: 600;
+ margin-bottom: 15px;
+ cursor: pointer;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+ 
+ .faq-question span {
+ color: var(--accent-gold);
+ font-size: 2rem;
+ line-height: 1;
+ }
+
+ .faq-answer {
+ color: var(--text-secondary);
+ font-size: 1.1rem;
+ line-height: 1.8;
+ max-width: 90%;
+ }
+
+ /* Footer */
+ .site-footer {
+ padding: 80px 20px;
+ text-align: center;
+ border-top: 1px solid var(--border-color);
+ color: var(--text-secondary);
+ font-size: 0.9rem;
+ }
+
+ .footer-logo {
+ font-size: 2rem;
+ font-weight: 700;
+ color: var(--text-primary);
+ margin-bottom: 20px;
+ display: block;
+ }
+
+ .footer-logo span {
+ color: var(--accent-gold);
+ }
+
+ @media (max-width: 768px) {
+ .site-nav {
+ padding: 20px;
+ }
+ .nav-links {
+ display: none; /* Simplified mobile handling */
+ }
+ .stats-container {
+ grid-template-columns: 1fr;
+ gap: 40px;
+ }
+ .hero-title {
+ font-size: 3rem;
+ }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (1/3) · sf-t3-1779642571200-001">
+  <meta property="og:description" content="sf-t3-1779642571200-001에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://dangsan-body-care.mens-esthe.space/posts.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header class="hero-section">
+ <h1 class="hero-title">진실은<br><span class="hero-accent">데이터 속에</span> 숨어있다.</h1>
+ <p class="hero-subtitle">당신이 알고 있다고 생각했던 당산 관리샵 노트 의 모든 것. <br>피상적인 정보를 걷어내고 본질을 파헤친다.</p>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 41개 · 1/3 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/checklist-001-15mo7y3.html">당산 관리샵 노트 선택 전에 확인할 체크리스트와 실패 사례</a>
+        <p class="post-item__summary">당산 지역에서 몸의 피로를 풀기 위해 마사지 샵을 찾고 있다면, 단순히 가까운 거리나 저렴한 비용만을 기준으로 결정해서는 안 됩니다. 소중한 내 몸을 맡기는 일인 만큼 시설의 청결 상태와 관리사의 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/checklist-006-ngxd7f.html">보드게임 카페 7년 차 사장이 말하는 당산 마사지 골라내는 법, 실패한 손님들이 공통적으로 놓친 것</a>
+        <p class="post-item__summary">금요일 저녁, 카페 마감 정리 중이었다. 단골 손님이 테이블에 앉아서 핸드폰 화면을 보여주며 &quot;형, 여기 괜찮아 보여요?&quot;라고 묻는 거다. 당산역 근처 마사지 샵 사진이었다. 인스타에서 찾았다고 했</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/compare-005-1ucvdta.html">다크소울 1편 데모에서 사라진 무기 파일 하나가 말해주는 기획 의도의 잔해</a>
+        <p class="post-item__summary">1.02 버전 패치 노트 마지막 페이지, 위쪽으로 세 줄. 거기 weapon_XX.msgbnd 삭제 기록이 있다. 그게 전부인데, 파일명 하나가 자꾸 신경 쓰인 건 데이터 마이너라면 누구나 겪는 일</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/field_note-002-17g9xf.html">당산 룸 40만원 받으면 손에 남는 게 7만원입니다</a>
+        <p class="post-item__summary">2019년 겨울, 중개인으로서 권리금 2억을 챙기고 나간 룸살롱 실장 A씨의 정산 내역서를 들여다본 적이 있다. 월 매출 1,800만원 찍던 가게였다. 세 달 뒤 그 자리는 폐업 신고를 접수했다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260704-196.html">강서 지역 프리미엄 가라오케 솔직 탐방 리뷰와 시스템 정리</a>
+        <p class="post-item__summary">강서 구청 및 주요 번화가 주변에는 고품격 인테리어와 방음 시설을 자랑하는 가라오케가 많이 밀집되어 있습니다. 쾌적한 실내 위생 상태와 직원의 친절한 안내가 만족도를 높이는 핵심 요소입니다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0061.html">당산 마사지 추천정보 활용하여 망원 노래방 추천정보 찾는 노하우</a>
+        <p class="post-item__summary">당산 마사지 추천정보를 확인하듯 지역 기반의 서비스 정보를 꼼꼼히 살피는 자세가 필요합니다. 망원 노래방 추천정보를 찾을 때는 단순히 광고성 게시글에 의존하기보다 구체적인 이용 절차를 따져보는 것이</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0062.html">당산 마사지 추천정보 기반 공덕 셔츠룸 추천정보 가격 판단 가이드</a>
+        <p class="post-item__summary">당산 마사지 추천정보를 찾는 것과 마찬가지로 공덕 셔츠룸 추천정보 역시 적절한 가격 체계를 이해하는 것이 우선입니다. 셔츠룸 서비스는 일반적인 유흥 시설과 운영 방식이 다르기 때문에 비용 지불의 기</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0063.html">당산 마사지 추천정보 참고하여 연남 유흥 추천정보 예약 시 주의사항</a>
+        <p class="post-item__summary">당산 마사지 추천정보를 찾던 경험을 떠올려 보면 예약 과정에서의 소통 부재가 가장 큰 실패 요인임을 알 수 있습니다. 연남 유흥 추천정보를 알아보는 과정에서도 이와 같은 실수를 범하지 않으려면 단계</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0064.html">당산 마사지 추천정보 활용한 마곡 가라오케 추천정보 위치 확인법</a>
+        <p class="post-item__summary">당산 마사지 추천정보를 통해 지역 정보를 파악했던 것처럼 마곡 가라오케 추천정보를 얻을 때도 접근성을 우선적으로 고려해야 합니다. 대중교통 이용이 용이한지, 혹은 주차 시설은 갖춰져 있는지가 만족스</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0065.html">당산 마사지 추천정보 활용해 찾는 마곡 유흥 추천정보</a>
+        <p class="post-item__summary">낯선 지역을 방문할 때 평소 즐겨 찾던 당산 마사지 추천정보를 검색하는 습관이 있다면, 새로운 환경에서도 비슷한 기준을 세우는 것이 중요합니다. 특히 마곡 일대에서 저녁 시간을 계획하는 분들이 많아</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0066.html">당산 마사지 추천정보와 다른 합정 노래방 추천정보</a>
+        <p class="post-item__summary">노래방은 무조건 밤늦은 시간에만 즐기는 곳이라는 생각은 흔한 오해 중 하나입니다. 당산 마사지 추천정보를 찾아보던 경험을 되살려보면, 건전한 여가 문화로서의 업장을 찾는 기준은 시간에 구애받지 않아</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0067.html">당산 마사지 추천정보와 연계된 연남 클럽 추천정보</a>
+        <p class="post-item__summary">힙한 분위기를 즐기기 위해 필수적인 조건은 음악의 장르, 공간의 규모, 그리고 방문하는 인원 구성입니다. 평소 당산 마사지 추천정보를 통해 휴식을 찾던 분들이 연남 지역으로 이동할 때는 전혀 다른 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0068.html">당산 마사지 추천정보보다 정교한 합정 셔츠룸 추천정보</a>
+        <p class="post-item__summary">여러분은 유흥 장소를 선택할 때 가장 먼저 무엇을 확인하시나요? 당산 마사지 추천정보를 검색하며 익혔던 꼼꼼한 비교 습관이 셔츠룸을 선택할 때도 그대로 적용되어야 합니다. 서비스의 품질과 투명한 가</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0069.html">당산 마사지 추천정보를 찾는 분들이 공덕 가라오케 추천정보를 확인하는 이유</a>
+        <p class="post-item__summary">당산 마사지 추천정보를 찾는 분들이 자신의 여가 시간을 알차게 보내기 위해 인근의 유흥 공간을 물색하는 경우가 많습니다. 특히 직장인들이 밀집한 공덕 지역에서 적합한 장소를 찾을 때는 단순히 화려한</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0070.html">당산 마사지 추천정보로 보는 홍대 노래방 추천정보의 가격 판단 기준</a>
+        <p class="post-item__summary">당산 마사지 추천정보를 검색하는 분들이 홍대 지역의 여가 문화를 함께 살피는 일이 잦아지고 있습니다. 특히 노래방을 선택할 때 가격 대비 서비스의 질을 어떻게 판단할 것인지는 모든 방문객의 공통적인</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0071.html">당산 마사지 추천정보 활용한 마포 럭셔리 단체 가라오케 예약 가이드 절차</a>
+        <p class="post-item__summary">당산 마사지 추천정보를 얻으려는 분들은 힐링 이후의 여흥 장소로 마포 일대를 자주 언급합니다. 하지만 단체 모임을 위해 가라오케를 예약할 때는 준비 부족으로 인해 낭패를 보는 경우가 생각보다 많습니</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0072.html">당산 마사지 추천정보 기반의 구글 봇 정밀 검진 및 크롤 버짓 밀착 간호 분석</a>
+        <p class="post-item__summary">당산 마사지 추천정보 관련 웹사이트를 운영하면서 정보의 노출을 극대화하려면 구글 봇의 움직임을 면밀히 살펴야 합니다. 크롤 버짓은 사이트의 품질을 결정하는 중요한 지표이며, 이를 효과적으로 관리하는</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0073.html">당산 마사지 추천정보를 활용한 구글 틈새 키워드 트래픽 외환 거래 전략 활용법</a>
+        <p class="post-item__summary">최근 디지털 마케팅 환경에서 특정 지역의 정보를 찾는 사용자 흐름은 예상치 못한 비즈니스 기회로 이어지곤 합니다. 예를 들어 당산 마사지 추천정보를 검색하는 유저들이 특정 시간대에 집중되는 현상을 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0074.html">당산 마사지 추천정보 검색 유저를 위한 ishikyujin 바로가기 가이드</a>
+        <p class="post-item__summary">많은 이들이 검색 엔진 최적화가 마법처럼 즉각적인 결과를 가져온다고 오해하지만, 실제로는 꾸준한 관리와 보수 과정이 필수적입니다. 당산 마사지 추천정보를 찾는 사용자들에게 양질의 콘텐츠를 제공하는 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/gemini-coverage-20260721-0075.html">당산 마사지 추천정보 활용한 지수 성장 클리닉 정보</a>
+        <p class="post-item__summary">성공적인 웹사이트 운영을 위해서는 체계적인 데이터 관리와 정교한 외부 유입 경로 확보가 필수적인 충족 조건입니다. 많은 이들이 당산 마사지 추천정보 관련 키워드를 분석하며 디지털 자산의 가치를 높이</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <span class="pager__current">1</span>
+      <a class="pager__link" href="posts-2.html">2</a>
+      <a class="pager__link" href="posts-3.html">3</a>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
